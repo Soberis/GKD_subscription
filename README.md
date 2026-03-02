@@ -1,6 +1,20 @@
-# subscription-template
+# Soberis GKD Subscription
 
-GKD 订阅模板, 此仓库方便您直接构建自己订阅, 点击右上角 [Use this template](https://github.com/new?template_name=subscription-template&template_owner=gkd-kit) 即可使用
+基于 [GKD 订阅模板](https://github.com/gkd-kit/subscription-template) 构建的个人 GKD 订阅规则，用于 Android 设备自动跳过广告、关闭弹窗等。
+
+## 规则来源
+
+初始规则基于 [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription) 搬运而来（该项目已于 2026.02.12 停止维护，累计适配 886 个 App、2074 个规则组），后续由我们自行维护和更新。
+
+## Vibe Coding
+
+本项目采用 **Vibe Coding** 方式开发维护，使用 **Claude** 和 **Gemini** AI 模型辅助编写和迭代规则代码。
+
+## 致谢
+
+- [gkd-kit/gkd](https://github.com/gkd-kit/gkd) - GKD 本体
+- [gkd-kit/subscription-template](https://github.com/gkd-kit/subscription-template) - 订阅模板
+- [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription) - 初始规则来源
 
 ## 配置环境
 
