@@ -16,7 +16,6 @@ export default defineGkdApp({
           activityIds: '.MainActivity',
           matches: '[desc="我知道了"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/95caf815-b2bc-48cc-a245-0341e58f0e39',
-          snapshotUrls: 'https://i.gkd.li/i/19749364',
         },
       ],
     },
