@@ -127,6 +127,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           matchTime: 10000,
           activityIds: '.view.main.MainActivity',
           matches: '[text="立即更新"]',
@@ -160,6 +161,8 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-[大家还下载了]应用推荐',
       desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'activity',
       rules: [
         {
           fastQuery: true,
@@ -180,6 +183,8 @@ export default defineGkdApp({
       key: 5,
       name: '局部广告-信息流广告',
       desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'activity',
       rules: [
         {
           fastQuery: true,
