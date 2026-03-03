@@ -23,4 +23,12 @@ package-lock.json
 yarn.lock
 
 
+#参考项目
 AIsouler_GKD/
+
+#手机app
+app.txt
+
+#antigravity
+.agents/
+.tasks/

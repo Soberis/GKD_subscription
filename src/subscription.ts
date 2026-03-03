@@ -17,9 +17,9 @@ apps.forEach((appConfig) => {
 
 export default defineGkdSubscription({
   id: 233,
-  name: 'Soberis GKD Subscription',
+  name: 'Sober 规则',
   version: 0,
-  author: 'Soberis (vibecoding with Claude & Gemini)',
+  author: 'Sober',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/Soberis/GKD_subscription',
   categories,

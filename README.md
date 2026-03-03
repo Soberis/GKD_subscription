@@ -1,4 +1,4 @@
-# Soberis GKD Subscription
+# Sober's GKD Subscription
 
 基于 [GKD 订阅模板](https://github.com/gkd-kit/subscription-template) 构建的个人 GKD 订阅规则，用于 Android 设备自动跳过广告、关闭弹窗等。
 
@@ -23,9 +23,9 @@
 > [!IMPORTANT]
 > 选择器需要使用 nodejs@22 的 WasmGc 来校验 Java/Kotlin 正则表达式, 确保使用 nodejs>=22
 
-- nodejs>=**22** <https://nodejs.org/en/download>
-- pnpm>=9 <https://pnpm.io/zh/installation>
-- vscode <https://code.visualstudio.com>
+- nodejs>=**22** [https://nodejs.org/en/download](https://nodejs.org/en/download)
+- pnpm>=9 [https://pnpm.io/zh/installation](https://pnpm.io/zh/installation)
+- vscode [https://code.visualstudio.com](https://code.visualstudio.com)
 
 安装好后使用模板, 假设您刚刚使用 `Use this template` 创建的仓库是 `https://github.com/username/subscription`
 
@@ -55,7 +55,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 如果您无法初始化 nodejs 环境, 那可以直接使用 github 网页编辑文件后在线提交, 点击下面链接即可在线编辑
 
-<https://github.com/username/subscription/edit/main/src/subscription.ts>
+[https://github.com/username/subscription/edit/main/src/subscription.ts](https://github.com/username/subscription/edit/main/src/subscription.ts)
 
 ![image](https://github.com/gkd-kit/gkd/assets/38517192/6a724cd9-b2cd-429d-bf2e-87f2c8b3d566)
 
@@ -66,7 +66,7 @@ pnpm install --registry=https://registry.npmmirror.com
 - 规则分类 [./src/categories.ts](./src/categories.ts)
 - 应用规则 [./src/apps](./src/apps/)
 
-在 vscode 内使用鼠标悬浮在任意字段上即可查看注释说明, 也可在 <https://gkd.li/api> 搜索查看
+在 vscode 内使用鼠标悬浮在任意字段上即可查看注释说明, 也可在 [https://gkd.li/api](https://gkd.li/api) 搜索查看
 
 ![image](https://github.com/gkd-kit/gkd/assets/38517192/35400b43-0d79-4a67-bd4c-6915613488db)
 
@@ -84,7 +84,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 当提交代码到仓库时, 我们也需要使用 github actions 来帮助自动格式化并修复代码, 因此您需要开启仓库的此项权限
 
-打开 <https://github.com/username/subscription/settings/actions>
+打开 [https://github.com/username/subscription/settings/actions](https://github.com/username/subscription/settings/actions)
 
 然后找到 Workflow permissions 点击 Read and write permissions 然后点击下方的 Save 即可
 
@@ -98,7 +98,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 我们使用其中的 `build_release.yml` 构建并发布
 
-打开 <https://github.com/username/subscription/actions/workflows/build_release.yml>
+打开 [https://github.com/username/subscription/actions/workflows/build_release.yml](https://github.com/username/subscription/actions/workflows/build_release.yml)
 
 然后点击右侧的 `Run workflow` 即可运行并发布
 
@@ -114,7 +114,7 @@ https://raw.githubusercontent.com/username/subscription/main/dist/gkd.json5
 
 raw.githubusercontent.com 在大陆的访问常常无法访问
 
-您可以换成 <https://fastly.jsdelivr.net/gh/username/subscription@main/dist/gkd.json5> 加速访问
+您可以换成 [https://fastly.jsdelivr.net/gh/username/subscription@main/dist/gkd.json5](https://fastly.jsdelivr.net/gh/username/subscription@main/dist/gkd.json5) 加速访问
 
 如果无法访问 raw.githubusercontent.com 和 fastly.jsdelivr.net
 
@@ -128,7 +128,7 @@ raw.githubusercontent.com 在大陆的访问常常无法访问
 
 ![image](https://github.com/gkd-kit/gkd/assets/38517192/79817967-6f97-4935-9bf3-179bbf50b3aa)
 
-接下来获取 token, 你需要先注册 <https://www.npmjs.com>, 然后到 Access Tokens 界面点击 Generate New Token 选择 Classic Token 后随便输入 Name 选择 Publish 即可生成并复制
+接下来获取 token, 你需要先注册 [https://www.npmjs.com](https://www.npmjs.com), 然后到 Access Tokens 界面点击 Generate New Token 选择 Classic Token 后随便输入 Name 选择 Publish 即可生成并复制
 
 ![image](https://github.com/gkd-kit/gkd/assets/38517192/ca5eaf26-3705-4dc7-9584-4a235bbefde2)
 
@@ -136,7 +136,7 @@ raw.githubusercontent.com 在大陆的访问常常无法访问
 
 ![image](https://github.com/gkd-kit/gkd/assets/38517192/55db57f6-1021-4d85-afd0-fe7df1f9bbcf)
 
-复制后打开 <https://github.com/username/subscription/settings/secrets/actions/new>
+复制后打开 [https://github.com/username/subscription/settings/secrets/actions/new](https://github.com/username/subscription/settings/secrets/actions/new)
 
 在 Name 输入 `NPM_TOKEN`, 在 Secret 输入刚刚复制的 token, 点击 Add secret 即可添加成功
 
@@ -158,7 +158,7 @@ https://registry.npmmirror.com/@your_npm_name/subscription/latest/files/dist/gkd
 
 由于 npmmirror 被恶意刷流量后已经改为白名单模式, 不在白名单内的包, 上面的链接无法正常加速访问
 
-因此要使上面的链接被正常访问, 你需要向 <https://github.com/cnpm/unpkg-white-list> 提交 pr 将你的包添加到白名单
+因此要使上面的链接被正常访问, 你需要向 [https://github.com/cnpm/unpkg-white-list](https://github.com/cnpm/unpkg-white-list) 提交 pr 将你的包添加到白名单
 
 ## 自定义配置文件
 

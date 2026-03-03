@@ -66,4 +66,10 @@ jobs:
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
-          node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
+          # syncNpmmirror 已移除：cnpm/unpkg-white-list 不收录 GKD 规则包
+
+      - name: Purge jsdelivr cache
+        if: ${{ steps.commit.outcome == 'success' }}
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/Soberis/GKD_subscription@main/dist/gkd.json5"
+          curl -s "https://purge.jsdelivr.net/gh/Soberis/GKD_subscription@main/dist/gkd.version.json5"
