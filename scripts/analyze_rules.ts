@@ -9,7 +9,11 @@ async function main() {
   const files = await fs.readdir(appsDir);
   const tsFiles = files.filter((f) => f.endsWith('.ts'));
 
-  const issues = {
+  const issues: {
+    missingFastQuery: string[];
+    missingActionMaximum: string[];
+    missingActivityIds: string[];
+  } = {
     missingFastQuery: [],
     missingActionMaximum: [],
     missingActivityIds: [],
