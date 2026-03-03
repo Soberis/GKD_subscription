@@ -29,6 +29,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-流量更新点击继续下载',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
@@ -44,6 +46,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-不开启流量自动更新',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

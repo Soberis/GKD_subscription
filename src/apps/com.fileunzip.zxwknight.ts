@@ -89,6 +89,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '@[vid="ziputil_dialog_imageview"] + [text="有新版本啦"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a428a59c-5cdd-47e9-bfc5-492b43ed169a',

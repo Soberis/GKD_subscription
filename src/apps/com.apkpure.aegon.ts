@@ -24,6 +24,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-更新与已安装界面-点击[查看更多]',
+      actionMaximum: 1,
+      resetMatch: 'app',
       fastQuery: true,
       rules: [
         {
@@ -42,6 +44,8 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-更新界面软件推荐',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.apkpure.aegon.main.activity.MainTabActivity',
         'com.apkpure.aegon.main.activity.AppManagerActivity',

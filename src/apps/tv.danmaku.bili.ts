@@ -535,6 +535,8 @@ export default defineGkdApp({
     {
       key: 20,
       name: '评价提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

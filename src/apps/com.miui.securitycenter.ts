@@ -19,6 +19,8 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-禁止获取定位',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '关闭"允许联网及定位"后，每次打开手机管家都会出现',
       rules: [
         {
@@ -74,6 +76,8 @@ export default defineGkdApp({
     {
       key: 14,
       name: '功能类-高敏感权限自动确定',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '勾选[我已知晓可能存在的风险]-10s后点击[确定]',
       fastQuery: true,
       activityIds: [

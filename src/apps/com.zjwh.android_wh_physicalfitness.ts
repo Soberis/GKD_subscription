@@ -258,6 +258,8 @@ export default defineGkdApp({
     {
       key: 13,
       name: '权限提示-不开启可选权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[暂不开启，继续跑步]',
       rules: [
         {

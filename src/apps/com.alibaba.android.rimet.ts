@@ -70,6 +70,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13402478',
         },
         {
+          fastQuery: true,
           matches:
             'TextView[id="com.alibaba.android.rimet:id/dialog_close_button"]',
           snapshotUrls: 'https://i.gkd.li/i/13772151',
@@ -86,6 +87,7 @@ export default defineGkdApp({
       activityIds: 'com.alibaba.android.user.qrcode.WebLoginActivity',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.alibaba.android.rimet:id/btn_login"]',
           snapshotUrls: 'https://i.gkd.li/i/13433981',
         },

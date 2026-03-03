@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '评价提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

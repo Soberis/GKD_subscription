@@ -27,6 +27,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13325888',
         },

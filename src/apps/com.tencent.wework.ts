@@ -82,6 +82,8 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-悬浮窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

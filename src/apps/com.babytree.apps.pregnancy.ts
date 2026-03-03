@@ -34,6 +34,7 @@ export default defineGkdApp({
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {
+          fastQuery: true,
           matches:
             'ImageView[id="com.babytree.apps.pregnancy:id/bb_referenced_active_dialog_img_2"] + ImageView[id!=null][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12614834',

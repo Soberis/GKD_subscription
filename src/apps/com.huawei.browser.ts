@@ -24,6 +24,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '关闭资讯通知后，总是弹窗让打开',
       rules: [
         {

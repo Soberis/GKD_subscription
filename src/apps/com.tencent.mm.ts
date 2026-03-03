@@ -426,6 +426,8 @@ export default defineGkdApp({
     {
       key: 22,
       name: '功能类-开启青少年模式后的每日验证',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击"验证密码"',
       rules: [
         {

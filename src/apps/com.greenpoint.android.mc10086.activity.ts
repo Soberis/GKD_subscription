@@ -101,6 +101,7 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          fastQuery: true,
           matches:
             '[text*="获取您的"] < LinearLayout +(2) LinearLayout >(2) [text="不允许"]',
           snapshotUrls: [

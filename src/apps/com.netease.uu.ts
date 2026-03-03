@@ -44,6 +44,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[id="com.netease.uu:id/iv_close_dialog" || id="com.netease.uu:id/close_icon" || id="com.netease.uu:id/iv_close"][visibleToUser=true]',
         },

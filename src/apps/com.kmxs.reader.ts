@@ -30,6 +30,7 @@ export default defineGkdApp({
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.kmxs.reader:id/ad_direct_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12640303',
@@ -52,6 +53,7 @@ export default defineGkdApp({
       name: '局部广告-右侧悬浮红包',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: {
+        fastQuery: true,
         matches:
           '[id="com.kmxs.reader:id/red_packet_img"] + [id="com.kmxs.reader:id/close_red_packet"]',
         action: 'clickCenter',

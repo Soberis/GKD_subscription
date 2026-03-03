@@ -14,6 +14,7 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[vid="clock_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/15523957',
         },
@@ -90,6 +91,8 @@ export default defineGkdApp({
     {
       key: 6,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[以后再说]',
       rules: [
         {

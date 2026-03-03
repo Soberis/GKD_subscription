@@ -61,6 +61,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text*="青少年模式"] + [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/14209309',
         },

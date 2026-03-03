@@ -90,6 +90,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[vid="dialog_cancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/06ae328b-f852-407b-83ab-ec295d41baa4',

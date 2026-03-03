@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '评价提示-分享提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击右上角的x',
       rules: [
         {

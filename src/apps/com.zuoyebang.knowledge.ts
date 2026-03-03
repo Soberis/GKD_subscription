@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.zuoyebang.knowledge:id/cancel_button"]',
           snapshotUrls: 'https://i.gkd.li/i/13695522',
         },

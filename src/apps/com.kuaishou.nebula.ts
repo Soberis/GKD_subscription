@@ -94,6 +94,8 @@ export default defineGkdApp({
     {
       key: 6,
       name: '评价提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: 'x掉',
       rules: [
         {

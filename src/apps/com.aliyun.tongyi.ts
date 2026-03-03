@@ -29,6 +29,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[id="com.aliyun.tongyi:id/iv_close" || id="com.aliyun.tongyi:id/close_btn"][visibleToUser=true]',
         },

@@ -24,6 +24,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[text*="检测到"&&text*="升级"] < ViewGroup + ViewGroup > Button > [text = "取消"]',
           snapshotUrls: 'https://i.gkd.li/i/12639671',

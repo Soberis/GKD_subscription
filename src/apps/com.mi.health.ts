@@ -88,6 +88,8 @@ export default defineGkdApp({
     {
       key: 5,
       name: '通知提示-公告栏',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
@@ -101,6 +103,8 @@ export default defineGkdApp({
     {
       key: 6,
       name: '权限提示-麦克风',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

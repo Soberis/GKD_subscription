@@ -22,6 +22,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '评价提示-通话质量评价',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

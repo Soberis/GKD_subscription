@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text="去开启"] + [id="com.hupu.shihuo:id/ivClose"]',
           snapshotUrls: 'https://i.gkd.li/i/13704887',
         },

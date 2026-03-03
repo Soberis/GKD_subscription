@@ -10,6 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.android.browser.BrowserActivity'],
       rules: [
         {
+          fastQuery: true,
           matches:
             '@ImageView[id!=null][clickable=true] -2 [text="个性推荐获得更丰富内容"]',
           snapshotUrls: 'https://i.gkd.li/i/12829403',

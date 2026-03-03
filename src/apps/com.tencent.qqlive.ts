@@ -441,6 +441,8 @@ export default defineGkdApp({
     {
       key: 23,
       name: '其他-视频播放时的评价悬浮窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击关闭',
       rules: [
         {

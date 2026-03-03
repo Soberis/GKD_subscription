@@ -74,6 +74,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '评价提示-客服',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

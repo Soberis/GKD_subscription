@@ -94,6 +94,8 @@ export default defineGkdApp({
     {
       key: 3,
       name: '通知提示-开门成功提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[好的]',
       rules: [
         {

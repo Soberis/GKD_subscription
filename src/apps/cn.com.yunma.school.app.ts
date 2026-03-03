@@ -50,6 +50,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

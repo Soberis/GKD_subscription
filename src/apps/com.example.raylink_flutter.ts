@@ -42,6 +42,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '通知提示-首页反诈骗提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.remote.cn.MainActivity',

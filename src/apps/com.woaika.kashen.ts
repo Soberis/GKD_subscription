@@ -32,6 +32,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[vid="tvPermissionDescDialogConfirm"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6faf1f01-5b77-414b-91d8-98dcb5673f7c',

@@ -77,6 +77,8 @@ export default defineGkdApp({
     {
       key: 6,
       name: '权限提示-应用使用情况',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[暂不]',
       rules: [
         {

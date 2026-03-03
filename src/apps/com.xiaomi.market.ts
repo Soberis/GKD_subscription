@@ -132,6 +132,8 @@ export default defineGkdApp({
     {
       key: 14,
       name: '功能类-移动数据更新弹窗点击继续',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

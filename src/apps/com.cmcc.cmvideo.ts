@@ -21,6 +21,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.cmcc.cmvideo:id/btn_update_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13276116',
         },
@@ -35,6 +36,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13276127',
         },

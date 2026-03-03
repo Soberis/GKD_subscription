@@ -49,6 +49,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          fastQuery: true,
           matches:
             '[id="com.citiccard.mobilebank:id/ll_app_upgrade_content"] + [id="com.citiccard.mobilebank:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13049283',

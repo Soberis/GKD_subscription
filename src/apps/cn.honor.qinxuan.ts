@@ -29,6 +29,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '@[vid="iv_close"] < * > [text="开启消息通知"]',
           snapshotUrls: 'https://i.gkd.li/i/14946137',
         },

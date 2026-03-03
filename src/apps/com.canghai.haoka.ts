@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-[公安部提示]弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[我已知晓，并承诺本人使用]',
       rules: [
         {

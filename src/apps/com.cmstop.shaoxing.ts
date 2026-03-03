@@ -14,6 +14,7 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.cmstop.shaoxing:id/roundProgressBar"]',
           snapshotUrls: 'https://i.gkd.li/i/13611775',
         },

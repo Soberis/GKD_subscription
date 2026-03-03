@@ -10,10 +10,12 @@ export default defineGkdApp({
       activityIds: 'com.davy.commonlibrary.utils.DialogUtil',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.baidutieba.davy:id/exit"]',
           snapshotUrls: 'https://i.gkd.li/i/12504289',
         },
         {
+          fastQuery: true,
           matches: '[id="com.baidutieba.davy:id/mimo_interstitial_close_img"]',
           snapshotUrls: 'https://i.gkd.li/i/12504291',
         },

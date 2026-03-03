@@ -14,6 +14,7 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[text^="关闭"][text.length=4]',
           snapshotUrls: 'https://i.gkd.li/i/13214974',
         },

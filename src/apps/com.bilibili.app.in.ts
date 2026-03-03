@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 5,
       name: '评价提示-评论区满意度评价',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
@@ -56,6 +58,8 @@ export default defineGkdApp({
     {
       key: 8,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

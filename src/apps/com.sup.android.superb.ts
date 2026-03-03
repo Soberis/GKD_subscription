@@ -27,6 +27,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text="开启推送通知"] +2 * > [text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13691081',
         },
@@ -58,6 +59,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[text="发现新版本"] +2 * > [text="我再想想"]',
           snapshotUrls: 'https://i.gkd.li/i/13858490',
         },

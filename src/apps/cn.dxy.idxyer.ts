@@ -55,6 +55,8 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击:x取消',
       rules: [
         {
@@ -69,6 +71,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '权限提示-悬浮小窗播放权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击取消',
       rules: [
         {

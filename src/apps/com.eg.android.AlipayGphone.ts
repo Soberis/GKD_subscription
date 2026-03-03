@@ -49,6 +49,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-定位权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       fastQuery: true,
       rules: [
         {
@@ -83,6 +85,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       fastQuery: true,
       rules: [
         {
@@ -670,6 +674,8 @@ export default defineGkdApp({
     {
       key: 33,
       name: '青少年模式',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

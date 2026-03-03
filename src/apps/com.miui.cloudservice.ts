@@ -50,6 +50,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

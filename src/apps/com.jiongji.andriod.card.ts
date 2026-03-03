@@ -58,6 +58,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '通知提示-关闭顶栏提醒',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.baicizhan.main.activity.MainTabActivity',

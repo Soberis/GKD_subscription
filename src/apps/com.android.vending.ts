@@ -78,6 +78,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '通知提示-隐私政策更新',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

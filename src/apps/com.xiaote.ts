@@ -14,6 +14,7 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.xiaote:id/ad_close"][text*="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/14035706',
         },

@@ -28,6 +28,7 @@ export default defineGkdApp({
       activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
         {
+          fastQuery: true,
           matches:
             'TextView[id="com.huawei.music:id/live_info"] < LinearLayout -2 [id="com.huawei.music:id/close_button"]',
           snapshotUrls: 'https://i.gkd.li/i/13067649',

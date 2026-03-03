@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-套餐限额提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

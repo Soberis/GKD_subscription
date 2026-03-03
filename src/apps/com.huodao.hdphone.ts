@@ -14,6 +14,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[vid="iv_adv"] + [vid="dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13927567',
         },

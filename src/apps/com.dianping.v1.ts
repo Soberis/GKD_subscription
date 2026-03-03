@@ -27,6 +27,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
           action: 'clickCenter', // clickNode无响应

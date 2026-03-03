@@ -14,6 +14,7 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[vid="activate_button"]',
           snapshotUrls: 'https://i.gkd.li/i/14293734',
         },

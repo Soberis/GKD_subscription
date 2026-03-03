@@ -39,6 +39,7 @@ export default defineGkdApp({
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[id="com.smile.gifmaker:id/pendant_mask_bg"] + [id="com.smile.gifmaker:id/pendant_close"][visibleToUser=true]',
           snapshotUrls: [

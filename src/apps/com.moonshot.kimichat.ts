@@ -29,6 +29,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches:
             '[id="com.moonshot.kimichat:id/iv_close" || id="com.moonshot.kimichat:id/close"][visibleToUser=true]',
         },

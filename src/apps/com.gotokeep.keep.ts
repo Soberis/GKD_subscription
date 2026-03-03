@@ -71,6 +71,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.gotokeep.keep:id/text_secondary_action"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6b0091e9-1bf1-49bd-be5c-e6997bc9accb',

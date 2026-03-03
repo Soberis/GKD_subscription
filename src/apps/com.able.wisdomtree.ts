@@ -56,6 +56,8 @@ export default defineGkdApp({
     {
       key: 4,
       name: '通知提示-课程提醒',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[已绑定，不再提示]',
       rules: [
         {
@@ -72,6 +74,8 @@ export default defineGkdApp({
     {
       key: 5,
       name: '通知提示-AI分析',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

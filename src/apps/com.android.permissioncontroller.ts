@@ -8,6 +8,8 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-定位权限',
       desc: '点击不允许',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

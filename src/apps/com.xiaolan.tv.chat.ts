@@ -7,6 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-温馨提示弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       desc: '点击[确定]',
       rules: [
         {
