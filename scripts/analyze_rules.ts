@@ -98,30 +98,27 @@ async function main() {
     }
   }
 
-  console.log('=== Performance Issues Report ===');
-  console.log(
+  const reportLines = [
+    '=== Performance Issues Report ===',
     `Missing FastQuery for simple rules: ${issues.missingFastQuery.length}`,
-  );
-  console.log(
     issues.missingFastQuery.slice(0, 10).join('\n') +
       (issues.missingFastQuery.length > 10 ? '\n...more' : ''),
-  );
-  console.log('\n---------------------------\n');
-  console.log(
+    '\n---------------------------\n',
     `Missing ActionMaximum for one-shot popups: ${issues.missingActionMaximum.length}`,
-  );
-  console.log(
     issues.missingActionMaximum.slice(0, 10).join('\n') +
       (issues.missingActionMaximum.length > 10 ? '\n...more' : ''),
-  );
-  console.log('\n---------------------------\n');
-  console.log(
+    '\n---------------------------\n',
     `Missing ActivityIds for common popups: ${issues.missingActivityIds.length}`,
-  );
-  console.log(
     issues.missingActivityIds.slice(0, 10).join('\n') +
       (issues.missingActivityIds.length > 10 ? '\n...more' : ''),
+  ];
+
+  await fs.writeFile(
+    path.resolve(__dirname, 'analyze_rules.txt'),
+    reportLines.join('\n'),
+    'utf-8',
   );
+  console.log('Report generated at scripts/analyze_rules.txt (UTF-8)');
 }
 
 main();
