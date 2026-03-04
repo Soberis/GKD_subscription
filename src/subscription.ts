@@ -18,7 +18,7 @@ apps.forEach((appConfig) => {
 export default defineGkdSubscription({
   id: 233,
   name: 'Sober 规则',
-  version: 17,
+  version: 19,
   author: 'Sober',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/Soberis/GKD_subscription',

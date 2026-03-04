@@ -32,3 +32,6 @@ app.txt
 #antigravity
 .agents/
 .tasks/
+
+# 临时脚本
+*.bat
