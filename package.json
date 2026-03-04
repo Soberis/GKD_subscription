@@ -7,14 +7,16 @@
     "format": "prettier --cache --write ./**/*.{js,cjs,mjs,ts,jsx,tsx,json}",
     "lint": "eslint --cache --fix ./**/*.{js,cjs,mjs,ts,jsx,tsx}",
     "check": "tsc --noEmit && tsx ./scripts/check.ts",
-    "build": "tsc --noEmit && tsx ./scripts/build.ts"
+    "build": "tsc --noEmit && tsx ./scripts/build.ts",
+    "bump": "tsx ./scripts/bump-version.ts"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
     "pre-push": "pnpm run check"
   },
   "lint-staged": {
-    "*.{js,cjs,mjs,ts,jsx,tsx}": [
+    "src/**/*.{js,cjs,mjs,ts,jsx,tsx}": [
+      "pnpm run bump",
       "eslint --cache --fix",
       "prettier --cache --write"
     ],

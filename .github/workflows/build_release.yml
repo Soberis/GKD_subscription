@@ -1,6 +1,15 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**/*.ts'
+      - 'src/**/*.json5'
+      - 'src/subscription.ts'
+
 
 permissions:
   contents: write
