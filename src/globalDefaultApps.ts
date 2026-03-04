@@ -189,79 +189,79 @@ export const blackListAppIDs: string[] = [
   'com.binance.dev', // 币安
   'com.superproductivity.superproductivity', // Super Productivity
 
-  'com.canghai.haoka',
-  'com.xy.td',
-  'com.bug.hookvip',
-  'one.yufz.hmspush',
-  'io.github.huskydg.magisk',
-  'xzr.konabess',
-  'org.lsposed.manager',
-  'org.lsposed.daemon',
-  'tw.nekomimi.nekogram',
-  'io.github.qauxv',
-  'com.rezvorck.tiktokplugin',
-  'com.zhiliaoapp.musically',
-  'com.github.tianma8023.xposed.smscode',
-  'Han.GJZS',
-  'org.adblockplus.adblockplussbrowser',
-  'com.viewblocker.jrsen',
-  'com.tsng.hidemyapplist',
-  'com.pittvandewitt.wavelet',
-  'one.yufz.onebox',
-  'com.Wecrane.Scar.pubg',
-  'me.bmax.apatch',
-  'com.tubevpn.client',
-  'github.tornaco.android.thanos.pro',
-  'com.omarea.vtools',
-  'com.litebyte.samhelper',
-  'com.nurke.perfectone',
-  'qlenlen.OneDesign',
-  'icu.nullptr.nativetest',
-  'icu.nullptr.applistdetector',
-  'io.github.vvb2060.mahoshojo',
-  'com.samsung.android.memoryguardian',
-  'com.music.khkj',
-  'Hook.JiuWu.Xp',
-  'me.weishu.kernelsu',
-  'com.franco.kernel',
-  'com.samsung.android.themedesigner',
-  'com.samsung.android.game.gamehome',
-  'com.tencent.tmgp.sgame',
-  'com.yangyanghuzhou.heijuan',
-  'com.sec.android.app.sbrowser',
-  'com.samsung.android.game.gamelab',
-  'com.Twilight.tools',
-  'com.miui.securitymanager',
-  'com.google.android.documentsui',
-  'com.android.settings',
-  'com.miui.creation',
-  'com.xiaomi.scanner',
-  'com.miui.gallery',
-  'com.yozo.office',
-  'com.miui.video',
-  'com.xiaomi.wpslauncher',
-  'com.sevtinge.hyperceiler',
-  'com.dna.tools',
-  'flar2.devcheck',
-  'com.github.capntrips.kernelflasher',
-  'com.google.android.googlequicksearchbox',
-  'qyz.onedesign',
-  'com.samsung.android.app.repaircal',
-  'com.yhchat.app',
-  'com.skyhand.sinahelper',
-  'com.rong862.bear',
-  'be.mygod.vpnhotspot',
-  'com.samsung.android.bixby.agent',
-  'com.reveny.vbmetafix.service',
-  'com.google.android.gms',
-  'com.android.vending',
-  'com.android.camera',
-  'com.android.traceur',
-  'com.android.mms',
-  'com.google.android.accessibility.switchaccess',
-  'com.miui.voiceassist',
-  'com.android.fileexplorer',
-  'com.miui.miservice',
+  'com.canghai.haoka', // 好卡
+  'com.xy.td', // 小源通讯录
+  'com.bug.hookvip', // HookVip
+  'one.yufz.hmspush', // HMS Push
+  'io.github.huskydg.magisk', // Magisk Delta
+  'xzr.konabess', // KonaBess
+  'org.lsposed.manager', // LSPosed 管理器
+  'org.lsposed.daemon', // LSPosed 守护进程
+  'tw.nekomimi.nekogram', // Nekogram
+  'io.github.qauxv', // QAuxiliary
+  'com.rezvorck.tiktokplugin', // TikTok Plugin
+  'com.zhiliaoapp.musically', // TikTok
+  'com.github.tianma8023.xposed.smscode', // XposedSmsCode
+  'Han.GJZS', // 国际诈骗
+  'org.adblockplus.adblockplussbrowser', // Adblock 浏览器
+  'com.viewblocker.jrsen', // View Blocker
+  'com.tsng.hidemyapplist', // 隐藏应用列表
+  'com.pittvandewitt.wavelet', // Wavelet
+  'one.yufz.onebox', // OneBox
+  'com.Wecrane.Scar.pubg', // PUBG 工具
+  'me.bmax.apatch', // APatch
+  'com.tubevpn.client', // TubeVPN
+  'github.tornaco.android.thanos.pro', // 打残赛 (Thanox)
+  'com.omarea.vtools', // Scene
+  'com.litebyte.samhelper', // SAM Helper
+  'com.nurke.perfectone', // PerfectOne
+  'qlenlen.OneDesign', // OneDesign
+  'icu.nullptr.nativetest', // Native Test
+  'icu.nullptr.applistdetector', // App List Detector
+  'io.github.vvb2060.mahoshojo', // Maho Shojo
+  'com.samsung.android.memoryguardian', // 三星内存守护
+  'com.music.khkj', // 酷狐音乐
+  'Hook.JiuWu.Xp', // 九五Hook
+  'me.weishu.kernelsu', // KernelSU
+  'com.franco.kernel', // Franco Kernel Manager
+  'com.samsung.android.themedesigner', // 三星主题设计
+  'com.samsung.android.game.gamehome', // 三星游戏中心
+  'com.tencent.tmgp.sgame', // 王者荣耀
+  'com.yangyanghuzhou.heijuan', // 黑卷
+  'com.sec.android.app.sbrowser', // 三星浏览器
+  'com.samsung.android.game.gamelab', // 三星游戏实验室
+  'com.Twilight.tools', // Twilight 工具箱
+  'com.miui.securitymanager', // 小米安全管家
+  'com.google.android.documentsui', // 系统文件管理
+  'com.android.settings', // 系统设置
+  'com.miui.creation', // 小米创作
+  'com.xiaomi.scanner', // 小米扫一扫
+  'com.miui.gallery', // 小米相册
+  'com.yozo.office', // 永中Office
+  'com.miui.video', // 小米视频
+  'com.xiaomi.wpslauncher', // WPS Office
+  'com.sevtinge.hyperceiler', // HyperCeiler
+  'com.dna.tools', // DNA 工具箱
+  'flar2.devcheck', // DevCheck
+  'com.github.capntrips.kernelflasher', // Kernel Flasher
+  'com.google.android.googlequicksearchbox', // Google 搜索
+  'qyz.onedesign', // OneDesign
+  'com.samsung.android.app.repaircal', // 三星维修日历
+  'com.yhchat.app', // 永辉超市
+  'com.skyhand.sinahelper', // 微博助手
+  'com.rong862.bear', // 熊论坛
+  'be.mygod.vpnhotspot', // VPN 热点
+  'com.samsung.android.bixby.agent', // Bixby
+  'com.reveny.vbmetafix.service', // VBMeta Fix
+  'com.google.android.gms', // Google Play 服务
+  'com.android.vending', // Google Play 商店
+  'com.android.camera', // 系统相机
+  'com.android.traceur', // 系统跟踪
+  'com.android.mms', // 系统短信
+  'com.google.android.accessibility.switchaccess', // 开关控制
+  'com.miui.voiceassist', // 小爱同学
+  'com.android.fileexplorer', // 文件管理器
+  'com.miui.miservice', // 小米服务框架
 
   // 系统自带非系统应用
   // 小米
