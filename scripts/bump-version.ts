@@ -9,14 +9,19 @@ const subscriptionFilePath = path.resolve(__dirname, '../src/subscription.ts');
 try {
   let content = fs.readFileSync(subscriptionFilePath, 'utf-8');
   const versionRegex = /version:\s*(\d+)/;
-  
+
   if (versionRegex.test(content)) {
-    content = content.replace(versionRegex, (match: string, version: string) => {
-      const newVersion = parseInt(version, 10) + 1;
-      console.log(`Bumping subscription version from ${version} to ${newVersion}`);
-      return `version: ${newVersion}`;
-    });
-    
+    content = content.replace(
+      versionRegex,
+      (match: string, version: string) => {
+        const newVersion = parseInt(version, 10) + 1;
+        console.log(
+          `Bumping subscription version from ${version} to ${newVersion}`,
+        );
+        return `version: ${newVersion}`;
+      },
+    );
+
     fs.writeFileSync(subscriptionFilePath, content, 'utf-8');
     console.log('Successfully updated src/subscription.ts.');
   } else {
