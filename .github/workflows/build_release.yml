@@ -8,8 +8,10 @@ on:
     paths:
       - 'src/**/*.ts'
       - 'src/**/*.json5'
-      - 'src/subscription.ts'
 
+concurrency:
+  group: build-release-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -17,6 +19,7 @@ permissions:
 jobs:
   build_release:
     runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
     outputs:
       version: ${{ steps.version.outputs.version }}
     steps:
@@ -70,12 +73,11 @@ jobs:
       - name: Publish package
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ env.NPM_TOKEN != '' }}
+        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
-          # syncNpmmirror 已移除：cnpm/unpkg-white-list 不收录 GKD 规则包
 
       - name: Purge jsdelivr cache
         if: ${{ steps.commit.outcome == 'success' }}
