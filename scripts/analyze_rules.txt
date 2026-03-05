@@ -1,0 +1,34 @@
+=== Performance Issues Report ===
+Missing FastQuery for simple rules: 129
+cn.dxy.idxyer - Group(key:5 '功能类-丁香园安全中心-自动点击继续访问') Rule(key:0): @Button[text="继续访问"][clickable=true]
+cn.dxy.idxyer - Group(key:6 '功能类-自动点击查看答案') Rule(key:1): @Button[text=" 查看答案"][clickable=true][visibleToUser=true]
+cn.dxy.idxyer - Group(key:7 '功能类-药品说明书-表格全屏自动横屏观看') Rule(key:0): @TextView[text="横屏"]
+cn.dxy.idxyer - Group(key:9 '功能类-📋病例视频自动慢速x0.5_选你想要的但不要多选!') Rule(key:0): [text="Playback Rate"][clickable=true][visibleToUser=true]
+cn.dxy.idxyer - Group(key:9 '功能类-📋病例视频自动慢速x0.5_选你想要的但不要多选!') Rule(key:1): @MenuItem[text="0.5x"][clickable=true]
+cn.dxy.idxyer - Group(key:10 '功能类-📋病例视频自动慢速x0.8_选你想要的但不要多选!') Rule(key:0): [text="Playback Rate"][clickable=true][visibleToUser=true]
+cn.dxy.idxyer - Group(key:10 '功能类-📋病例视频自动慢速x0.8_选你想要的但不要多选!') Rule(key:1): @MenuItem[text="0.8x"][clickable=true]
+cn.dxy.idxyer - Group(key:11 '功能类-📋病例视频自动倍速x1.5_选你想要的但不要多选!') Rule(key:0): [text="Playback Rate"][clickable=true][visibleToUser=true]
+cn.dxy.idxyer - Group(key:11 '功能类-📋病例视频自动倍速x1.5_选你想要的但不要多选!') Rule(key:1): @MenuItem[text="1.5x"][clickable=true]
+cn.dxy.idxyer - Group(key:12 '功能类-📋病例视频自动倍速x2.0_选你想要的但不要多选!') Rule(key:0): [text="Playback Rate"][clickable=true][visibleToUser=true]
+...more
+
+---------------------------
+
+Missing ActionMaximum for one-shot popups: 2
+com.jdd.newjdd.app - Group(key:1 '开屏广告')
+com.qc.mycomic - Group(key:0 '开屏广告')
+
+---------------------------
+
+Missing ActivityIds for common popups: 512
+app.revanced.android.apps.youtube.music - Group(key:1 '全屏广告-会员广告') Rule(key:0)
+cisdom.com.bigteaapp - Group(key:1 '全屏广告-弹窗广告') Rule(key:undefined)
+client.android.yixiaotong - Group(key:1 '全屏广告-弹窗广告') Rule(key:2)
+cn.cty.hbzw - Group(key:0 '开屏广告') Rule(key:undefined)
+cn.damai - Group(key:0 '开屏广告') Rule(key:undefined)
+cn.dxy.idxyer - Group(key:1 '局部广告') Rule(key:1)
+cn.mil.junhao - Group(key:0 '开屏广告') Rule(key:undefined)
+cn.samsclub.app - Group(key:0 '开屏广告') Rule(key:0)
+cn.samsclub.app - Group(key:0 '开屏广告') Rule(key:1)
+cn.soulapp.android - Group(key:0 '开屏广告') Rule(key:0)
+...more
